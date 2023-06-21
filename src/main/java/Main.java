@@ -7,7 +7,8 @@ public class Main {
 
     private static final int PORT = 8989;
     public static void main(String[] args) throws Exception {
-        BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
+        //BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
+        BooleanSearchEngineOptional engine = new BooleanSearchEngineOptional(new File("pdfs"));
 
         // здесь создайте сервер, который отвечал бы на нужные запросы
         // слушать он должен порт 8989

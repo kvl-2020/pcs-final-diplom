@@ -13,7 +13,8 @@ public class Client {
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
              BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
 
-            out.println("бизнес");
+            //out.println("бизнес");
+            out.println("бизнес за кейса");
             String line;
             while ((line = in.readLine()) != null) {
                 if (line.isEmpty()) {

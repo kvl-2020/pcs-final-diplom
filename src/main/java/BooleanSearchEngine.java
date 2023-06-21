@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class BooleanSearchEngine implements SearchEngine {
-    private Map<String, List<PageEntry>> index = new HashMap<>();
+    protected Map<String, List<PageEntry>> index = new HashMap<>();
 
     public BooleanSearchEngine(File pdfsDir) throws IOException {
         // прочтите тут все pdf и сохраните нужные данные,
@@ -15,7 +15,7 @@ public class BooleanSearchEngine implements SearchEngine {
 
         List<String> docList = PdfWork.getDocList(pdfsDir);
 
-        System.out.println(docList);
+        //System.out.println(docList);
         for (String docName : docList) {
             var doc = new PdfDocument(new PdfReader(new File(pdfsDir.getName() + "/" + docName)));
 
